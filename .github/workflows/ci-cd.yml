@@ -44,10 +44,10 @@ jobs:
 
       # Push the Docker image to Docker Hub
       - name: Push Docker image
-        run: docker push your-dockerhub-username/nestjs-app:${{ github.sha }}
+        run: docker push mohsenmrd/nestjs-app:${{ github.sha }}
 
       # Optionally, tag the image as 'latest'
       - name: Tag and push 'latest' tag
         run: |
-          docker tag your-dockerhub-username/nestjs-app:${{ github.sha }} your-dockerhub-username/nestjs-app:latest
-          docker push your-dockerhub-username/nestjs-app:latest
+          docker tag mohsenmrd/nestjs-app:${{ github.sha }} mohsenmrd/nestjs-app:latest
+          docker push mohsenmrd/nestjs-app:latest
