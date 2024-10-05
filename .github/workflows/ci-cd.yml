@@ -33,7 +33,7 @@ jobs:
 
       # Build the Docker image
       - name: Build Docker image
-        run: docker build -t your-dockerhub-username/nestjs-app:${{ github.sha }} .
+        run: docker build -t mohsenmrd/nestjs-app:${{ github.sha }} .
 
       # Log in to Docker Hub
       - name: Log in to Docker Hub
